@@ -1,0 +1,361 @@
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Mulish', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.nav1{
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav1 i{
+  margin: 0 5px;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.nav1 a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  background-color: #e67e22;
+}
+.nav2{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background-color: white;
+  padding: 0 40px;
+}
+.nav2 img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+}
+.menu a{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/bg.jpeg");
+  background-size: 100% 100%;
+  
+}
+.h-text{
+  max-width: 600px;
+  position: absolute;
+  color:white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.h-text h1{
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+.h-text p{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 0;
+  line-height: 30px;
+}
+.h-text a{
+  color:black;
+  background-color:#e67e22;
+  letter-spacing: 3px;
+  margin: 0 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family:sans-serif;
+  font-weight: bolder;
+  border-radius: 30px;
+}
+.h-text a:hover{
+  color:aqua;
+  background-color:crimson;
+}
+/* course section */
+.course{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.course .box .img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+
+}
+.course .box .amount{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  background-color:black;
+  color: white;
+  border-radius: 30px;
+}
+.course .box .stars{
+  font-size: 1rem;
+  color: yellow;
+  padding: 1rem 0;
+
+}
+.course .box .h1{
+  font-size: 2.3rem;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.course .box .p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: black;
+  padding: 2rem 0;
+}
+
+.course .icons{
+  display: flex;
+  justify-content: space-between;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  margin-top: 1rem;
+  padding:.5rem;
+  padding-top: 1rem;
+
+}
+.course .box{
+  flex:1 1 28rem;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  border:3px solid black;
+  padding:1rem;
+  position: relative;
+}
+
+.heading{
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(209, 43, 71);
+  background: var(--gradient);
+  padding: 0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 40px;
+  background:#e67e22;
+  color: black;
+  cursor: pointer;
+  font-size: 1.4rem;
+  align-items: center;
+  font-family: sans-serif;
+  justify-items: center;
+}
+.btn:hover{
+  color: #080707;
+  background-color: rgb(194, 52, 76);
+}
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.3rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 20rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2rem;
+  color:var(--violet);
+  padding:.7rem 0;
+  font-family:sans-serif;
+  font-weight: bolder;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  color:rgb(20, 15, 15);
+  padding:.7rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.2rem;
+  color:rgb(3, 2, 2);
+  padding:.7rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--pink);
+}
+
+.footer .box-container .box p i{
+  padding-right: .5rem;
+  color:var(--pink);
+}
+
+.footer .credit{
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding:1rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  color:#666;
+}
+
+.footer .credit span{
+  color:var(--pink);
+}
+/* contact section */
+.contact{
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* background: url("images/contact.jpeg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("images/contact.jpeg");
+  background-size: 100% 100%;
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #080707;
+}
+.contact .content  p{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #080707;
+}
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contact-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contact-info .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contact-info .box .icon{
+  color: #080707;
+  font-size: 22px;
+  font-weight: bolder;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+
+}
+.container .contact-info .box .text{
+  display: flex;
+  margin-left: 20px;
+  color: white;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: bolder;
+
+}
+.container .contact-info .box .text h3{
+  font-weight: bolder;
+  color: rgb(11, 243, 243);
+}
+.contact-form{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+
+}
+.contact-form h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #080707;
+}
+.contact-form .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea{
+  font-size: 1.2rem;
+  color: black;
+  border: none;
+  border-bottom: 2px solid #333;
+  margin: 10px 0;
+  padding: 5px 0;
+  outline: none;
+  resize: none;
+}
+.contact-form .inputbox input[type="submit"]{
+  width: 100%;
+  background: rgb(29, 231, 231);
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  font-weight: 800;
+  
+
+}
+@media (max-width:991px){
+  .contact{
+    padding: 50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contact-info{
+    margin-bottom: 40px;
+  }
+
+}
